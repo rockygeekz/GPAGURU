@@ -32,6 +32,10 @@ const Spga = () => {
     setclick(true);
   };
 
+  const changing = () => {
+    setclick(false)
+  }
+
   const reset = (e) => {
     setinputText({
       sub1: null,
@@ -177,8 +181,8 @@ const Spga = () => {
           </button>
           {clicked ? (
             <Results
-              score={inputText,clicked}
-              
+              score={inputText}
+              click={changing}
               
             />
           ) : null}
