@@ -51,24 +51,24 @@ const Sem6 = () =>{
           <div className="inputs ">
             <div className="left flex flex-col gap-y-8 mt-11 text-white  min-w-full p-9 text-center font-mono">
               <label htmlFor="">
-                1st semister 
+                1st semester 
                 <input
                   type="number"
                   name="sem1"
                   value={inputText.sem1}
-                  className="m-3 rounded-lg text-black"
+                  className="m-3 rounded-lg text-black h-10 w-56 px-8"
                   placeholder="Sgpa"
                   onChange={modchange}
                 />
               </label>
 
               <label htmlFor="">
-                2nd semister
+                2nd semester
                 <input
                   type="number"
                   name="sem2"
                   value={inputText.sem2}
-                  className="m-3 rounded-lg text-black"
+                  className="m-3 rounded-lg text-black h-10 w-56 px-8"
                   placeholder="Sgpa"
                   onChange={modchange}
                 />
@@ -76,12 +76,12 @@ const Sem6 = () =>{
 
 
               <label htmlFor="">
-                3rd semister
+                3rd semester
                 <input
                   type="number"
                   name="sem3"
                   value={inputText.sem3}
-                  className="m-3 rounded-lg text-black"
+                  className="m-3 rounded-lg text-black h-10 w-56 px-8"
                   placeholder="Sgpa"
                   onChange={modchange}
                 />
@@ -89,12 +89,12 @@ const Sem6 = () =>{
 
 
               <label htmlFor="">
-                4th semister
+                4th semester
                 <input
                   type="number"
                   name="sem4"
                   value={inputText.sem4}
-                  className="m-3 rounded-lg text-black"
+                  className="m-3 rounded-lg text-black h-10 w-56 px-8"
                   placeholder="Sgpa"
                   onChange={modchange}
                 />
@@ -102,12 +102,12 @@ const Sem6 = () =>{
 
 
               <label htmlFor="">
-                5th semister
+                5th semester
                 <input
                   type="number"
                   name="sem5"
                   value={inputText.sem5}
-                  className="m-3 rounded-lg text-black"
+                  className="m-3 rounded-lg text-black h-10 w-56 px-8"
                   placeholder="Sgpa"
                   onChange={modchange}
                 />
@@ -115,12 +115,12 @@ const Sem6 = () =>{
 
 
               <label htmlFor="">
-                6th semister
+                6th semester
                 <input
                   type="number"
                   name="sem6"
                   value={inputText.sem6}
-                  className="m-3 rounded-lg text-black"
+                  className="m-3 rounded-lg text-black h-10 w-56 px-8"
                   placeholder="Sgpa"
                   onChange={modchange}
                 />
@@ -130,13 +130,13 @@ const Sem6 = () =>{
               <button
                   type="submit"
                   onClick={modSubmit}
-                  className=" w-24  flex justify-center rounded bg-neutral-50 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-800 shadow-[0_4px_9px_-4px_#cbcbcb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(251,251,251,0.3)] dark:hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)]"
+                  className=" w-24  flex justify-center rounded bg-neutral-50 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-800 shadow-[0_4px_9px_-4px_#cbcbcb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(251,251,251,0.3)] dark:hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] m-4"
                 >
                   SUBMIT
                 </button>
                 <button
                   type="reset"
-                  className=" w-24  flex justify-center rounded bg-neutral-50 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-800 shadow-[0_4px_9px_-4px_#cbcbcb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(251,251,251,0.3)] dark:hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)]"
+                  className=" w-24  flex justify-center rounded bg-neutral-50 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-800 shadow-[0_4px_9px_-4px_#cbcbcb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(251,251,251,0.3)] dark:hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05) m-4"
                   onClick={reset}
                 >
                   RESET

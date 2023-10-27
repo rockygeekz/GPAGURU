@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import MyModel from "./MyModel";
 
 const Cgpa = () => {
   return (
@@ -71,6 +72,7 @@ const Cgpa = () => {
           </button>
         </Link>
       </div>
+      
     </div>
   );
 };
