@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sgpa-div{
+    font-size: 30px;
+    margin-bottom: 250px;
+    position: absolute;
+}
