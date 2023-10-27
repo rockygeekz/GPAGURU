@@ -27,7 +27,7 @@ const App = () => {
 
 const approuter = createBrowserRouter([
   {
-    path:"/",
+    path:"/GPAGURU",
     element:<Home/>
   },
   {
