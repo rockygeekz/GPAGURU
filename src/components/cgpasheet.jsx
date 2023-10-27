@@ -8,11 +8,20 @@ const CgpaResult = (props) =>{
         }
         console.log(total)
         const totalcgpa = (total/(Object.keys(props.score).length)).toFixed(2)
-    return (
-        <div className="sgpa-div">
-        <h1>CGPA</h1>
-        <div>{totalcgpa}</div>
-        </div>)
+        const handleOnClose = (e) => {
+            if(e.target.id === "container")
+            props.click();
+          };
+        return (
+            <div
+            id="container"
+              onClick={handleOnClose}
+              className=" fixed bg-black bg-opacity-30 backdrop-blur-sm  inset-0 flex items-center justify-center "
+            >
+              <div className="bg-white p-2 rounded-lg">{totalcgpa}</div>
+            </div>
+          );
+          console.log(totalcgpa);
 }
 
 export default CgpaResult
