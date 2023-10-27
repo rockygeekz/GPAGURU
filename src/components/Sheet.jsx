@@ -1,7 +1,7 @@
 import React from "react";
-import MyModel from "./MyModel";
 
-const Results = (props,{onclose}) => {
+
+const Results = (props) => {
   var gradepoints = [];
   for (const key in props.score) {
     if (props.score[`${key}`] >= 100) {
@@ -20,7 +20,7 @@ const Results = (props,{onclose}) => {
   
     const handleOnClose = (e) => {
       if(e.target.id === "container")
-      onclose();
+      props.clicked = false;
     };
     return (
         <div
