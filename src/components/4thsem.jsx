@@ -45,7 +45,7 @@ const Sem4 = () =>{
         <div className="absolute top-0 left-0 min-h-fit min-w-full container mt-10">
         <form action="" onSubmit={modSubmit}>
           <div className="inputs ">
-            <div className="left flex flex-col gap-y-8 text-white min-h-screen min-w-full p-9  font-mono">
+            <div className="left flex flex-col gap-y-8 mt-40 text-white  min-w-full p-9  font-mono text-center ">
               <label htmlFor="">
                 1st semister 
                 <input
