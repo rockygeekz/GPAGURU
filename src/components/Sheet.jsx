@@ -20,7 +20,7 @@ const Results = (props) => {
   
     const handleOnClose = (e) => {
       if(e.target.id === "container")
-      props.clicked = false;
+      props.click();
     };
     return (
         <div
