@@ -1,7 +1,7 @@
 import React from "react";
 import MyModel from "./MyModel";
 
-const Results = (props) => {
+const Results = (props,{visible},{onClose}) => {
   var gradepoints = [];
   for (const key in props.score) {
     if (props.score[`${key}`] >= 100) {
@@ -17,14 +17,24 @@ const Results = (props) => {
   const totalsgpa = ((fourcr + threecr + onecr) / 20).toFixed(2);
 
   gradepoints = [];
-
-  return (
-    <div className="sgpa-div">
-      {/* <h1>SGPA</h1> */}
-      <div>{totalsgpa}</div>
-      <div> <MyModel result={totalsgpa} /> </div>
-    </div>
-  );
+  const MyModel = ({ visible, onClose, props}) => {
+    const handleOnClose = (e) => {
+      if(e.target.id === "container")
+      onClose();
+    };
+    if (!visible) return null;
+    console.log(visible);
+    console.log(onClose);
+    return (
+        <div
+        id="container"
+          onClick={handleOnClose}
+          className=" fixed bg-black bg-opacity-30 backdrop-blur-sm  inset-0 flex items-center justify-center "
+        >
+          <div className="bg-white p-2 rounded-lg">{totalsgpa}</div>
+        </div>
+      );
+    };
 };
 
 export default Results;
