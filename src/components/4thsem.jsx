@@ -41,6 +41,11 @@ const Sem4 = () =>{
       }
 
 
+      const changing = () => {
+        setclick(false)
+      }
+
+
     return (
         <div className="absolute top-0 left-0 min-h-fit min-w-full container mt-10">
         <form action="" onSubmit={modSubmit}>
@@ -111,7 +116,7 @@ const Sem4 = () =>{
                 >
                   RESET
                 </button>
-                { clicked ? <CgpaResult score={inputText}/> : null }
+                {clicked ? <CgpaResult score={inputText} click={changing} /> : null}
               </div>
             </div>
           </div>

@@ -40,11 +40,15 @@ const Sem7 = () => {
     setclick(false);
   };
 
+  const changing = () => {
+    setclick(false)
+  }
+
   return (
     <div className="absolute top-0 left-0 min-h-fit min-w-full container mt-10">
       <form action="" onSubmit={modSubmit}>
         <div className="inputs ">
-          <div className="left flex flex-col gap-y-8 text-white min-w-full p-9 mt-11 text-center font-mono">
+          <div className="text-white inputs grid gap-y-8 lg:gap-y-8 mt-20 lg:mt-12 lg:grid-cols-2 lg:grid-rows-4 text-center max-h-[50rem] lg:text-xl">
             <label htmlFor="">
               1st semester
               <input
@@ -123,13 +127,15 @@ const Sem7 = () => {
                 type="number"
                 name="sem7"
                 value={inputText.sem7}
-                className="m-3 rounded-lg text-black h-10 w-56 px-8"
+                className="m-3 rounded-lg text-black h-10 w-56 px-8 "
                 placeholder="Sgpa"
                 onChange={modchange}
               />
             </label>
 
-            <div className="last-btn flex justify-center items-center gap-3  ">
+            
+          </div>
+          <div className="last-btn flex justify-center items-center gap-3  ">
               <button
                 type="submit"
                 onClick={modSubmit}
@@ -144,9 +150,8 @@ const Sem7 = () => {
               >
                 RESET
               </button>
-              {clicked ? <CgpaResult score={inputText} /> : null}
+              {clicked ? <CgpaResult score={inputText} click={changing} /> : null}
             </div>
-          </div>
         </div>
       </form>
     </div>

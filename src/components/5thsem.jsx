@@ -42,6 +42,10 @@ const Sem5 = () =>{
         setclick(false)
       }
 
+      const changing = () => {
+        setclick(false)
+      }
+
 
     return (
         <div className="absolute top-0 left-0 min-h-fit min-w-full container mt-10">
@@ -126,7 +130,7 @@ const Sem5 = () =>{
                 >
                   RESET
                 </button>
-                { clicked ? <CgpaResult score={inputText}/> : null }
+                {clicked ? <CgpaResult score={inputText} click={changing} /> : null}
               </div>
             </div>
           </div>

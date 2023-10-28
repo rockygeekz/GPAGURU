@@ -12,16 +12,22 @@ const CgpaResult = (props) =>{
             if(e.target.id === "container")
             props.click();
           };
-        return (
-            <div
-            id="container"
-              onClick={handleOnClose}
-              className=" fixed bg-black bg-opacity-30 backdrop-blur-sm  inset-0 flex items-center justify-center "
-            >
-              <div className="bg-white p-2 rounded-lg">{totalcgpa}</div>
-            </div>
-          );
           console.log(totalcgpa);
+        return (
+          <div
+          id="container"
+            onClick={handleOnClose}
+            className=" fixed bg-black bg-opacity-30 backdrop-blur-sm  inset-0 flex items-center justify-center "
+          >
+            <div className="bg-white p-2 rounded-xl w-64 h-52 flex flex-col items-center justify-center ">
+              <div className="top text-center text-4xl font-bold text-black" >CGPA<br />
+              </div>
+              <div className="res m-7 text-center bg-green-700 text-5xl rounded-2xl p-2 text-white ">{totalcgpa}</div>
+            </div>
+              
+          </div>
+          );
+          
 }
 
 export default CgpaResult
