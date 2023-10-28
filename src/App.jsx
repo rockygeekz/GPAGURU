@@ -13,9 +13,9 @@ import Sem5 from './components/5thsem.jsx';
 import Sem6 from './components/6thsem.jsx';
 import Sem7 from './components/7thsem.jsx';
 import Sem8 from './components/8thsem.jsx';
-import PcChoice from './components/pcchoice.jsx';
 import Pcycle from './components/pcycle.jsx';
 import Ccycle from './components/ccycle.jsx';
+import PcChoice from './components/pcchoice.jsx';
 
 // import {  } from "react-router-dom";
 
