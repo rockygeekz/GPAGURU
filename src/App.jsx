@@ -32,7 +32,7 @@ const App = () => {
     //   < Header/>
     // <RouterProvider router={approuter}/>
     // </div>
-    <Router basename="{import.meta.env.DEV ? '/' : '/.github/'}">
+    <Router basename="">
       <Header />
       <Routes>
         <Route path="/GPAGURU" element={<Home />} />
