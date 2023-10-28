@@ -92,7 +92,7 @@ const Ccycle = () => {
             />
           </label>
           <label htmlFor="">
-          CIVIL/ELECTRICAL/ELECTRONICS/C PROGRAMING/MECHANICAL ENGINEERING
+          CIVIL/ELECTRICAL/ELECTRONICS/C-PGM/ MECHANICAL ENGINEERING
             <br />
             <input
               type="number"
@@ -152,7 +152,7 @@ const Ccycle = () => {
             />
           </label>
         </div>
-        <div className="buttons flex items-center justify-center mt-14 ">
+        <div className="buttons flex items-center justify-center mt-24 ">
           {/* {" "} */}
           <button
             type="submit"

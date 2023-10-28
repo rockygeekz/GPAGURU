@@ -4,7 +4,6 @@ import Results from "./Sheet.jsx";
 import MyModel from "./MyModel.jsx";
 
 const Pcycle = () => {
-  
   const [inputText, setinputText] = useState({
     sub1: null,
     sub2: null,
@@ -33,8 +32,8 @@ const Pcycle = () => {
   };
 
   const changing = () => {
-    setclick(false)
-  }
+    setclick(false);
+  };
 
   const reset = (e) => {
     setinputText({
@@ -93,7 +92,7 @@ const Pcycle = () => {
             />
           </label>
           <label htmlFor="">
-            CIVIL / ELECTRICAL / ELECTRONICS / C PROGRAMING / MECHANICAL ENGINEERING
+            CIVIL/ELECTRICAL/ELECTRONICS/C-PGM/ MECHANICAL ENGINEERING
             <br />
             <input
               type="number"
@@ -105,7 +104,7 @@ const Pcycle = () => {
             />
           </label>
           <label htmlFor="">
-          ETC-1 / PLC-1
+            ETC-1 / PLC-1
             <br />
             <input
               type="number"
@@ -117,7 +116,7 @@ const Pcycle = () => {
             />
           </label>
           <label htmlFor="">
-          ENGLISH
+            ENGLISH
             <br />
             <input
               type="number"
@@ -129,7 +128,7 @@ const Pcycle = () => {
             />
           </label>
           <label htmlFor="">
-          IC / KANNADA
+            IC / KANNADA
             <br />
             <input
               type="number"
@@ -141,7 +140,7 @@ const Pcycle = () => {
             />
           </label>
           <label htmlFor="">
-          SFH / IDT
+            SFH / IDT
             <br />
             <input
               type="number"
@@ -152,16 +151,13 @@ const Pcycle = () => {
               onChange={modchange}
             />
           </label>
-
         </div>
-        <div className="buttons flex items-center justify-center mt-14 ">
+        <div className="buttons flex items-center justify-center mt-24 ">
           {/* {" "} */}
           <button
             type="submit"
             // onClick={modSubmit}
-            onClick={
-              modSubmit
-            }
+            onClick={modSubmit}
             className=" w-24  flex justify-center rounded bg-neutral-50 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-800 shadow-[0_4px_9px_-4px_#cbcbcb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(251,251,251,0.3)] dark:hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] m-5  "
           >
             SUBMIT
@@ -173,13 +169,7 @@ const Pcycle = () => {
           >
             RESET
           </button>
-          {clicked ? (
-            <Results
-              score={inputText}
-              click={changing}
-              
-            />
-          ) : null}
+          {clicked ? <Results score={inputText} click={changing} /> : null}
         </div>
       </form>
     </div>
