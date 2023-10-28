@@ -36,18 +36,18 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/GPAGURU" element={<Home />} />
-        <Route path="/cschoice" element={<Csgpa />} />
-        <Route path="/cg_scheme22" element={<Cgpa />} />
-        <Route path="/s_scheme22" element={<PcChoice />} />
-        <Route path="/p_scheme22" element={<Pcycle />} />
-        <Route path="/c_scheme22" element={<Ccycle />} />
-        <Route path="/2ndsem" element={<Sem2 />} />
-        <Route path="/3rdsem" element={<Sem3 />} />
-        <Route path="/4thsem" element={<Sem4 />} />
-        <Route path="/5thsem" element={<Sem5 />} />
-        <Route path="/6thsem" element={<Sem6 />} />
-        <Route path="/7thsem" element={<Sem7 />} />
-        <Route path="/8thsem" element={<Sem8 />} />
+        <Route path="/GPAGURU/cschoice" element={<Csgpa />} />
+        <Route path="/GPAGURU/cg_scheme22" element={<Cgpa />} />
+        <Route path="/GPAGURU/s_scheme22" element={<PcChoice />} />
+        <Route path="/GPAGURU/p_scheme22" element={<Pcycle />} />
+        <Route path="/GPAGURU/c_scheme22" element={<Ccycle />} />
+        <Route path="/GPAGURU/2ndsem" element={<Sem2 />} />
+        <Route path="/GPAGURU/3rdsem" element={<Sem3 />} />
+        <Route path="/GPAGURU/4thsem" element={<Sem4 />} />
+        <Route path="/GPAGURU/5thsem" element={<Sem5 />} />
+        <Route path="/GPAGURU/6thsem" element={<Sem6 />} />
+        <Route path="/GPAGURU/7thsem" element={<Sem7 />} />
+        <Route path="/GPAGURU/8thsem" element={<Sem8 />} />
       </Routes>
     </Router>
   );

@@ -16,10 +16,10 @@ const PcChoice = () => {
     </div>
     <div className="buttons flex items-center justify-center flex-wrap space-x-5 mt-5">
 
-    <Link to = "/c_scheme22"> <button type="button" className="py-[.688rem] px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-black hover:bg-white hover:border-black focus:outline-none focus:ring-2 focus:ring- focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-blue-500">
+    <Link to = "/GPAGURU/c_scheme22"> <button type="button" className="py-[.688rem] px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-black hover:bg-white hover:border-black focus:outline-none focus:ring-2 focus:ring- focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-blue-500">
   C-cycle
   </button></Link>
-  <Link to="/p_scheme22"><button type="button" className="py-[.688rem] px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-black hover:bg-white hover:border-black focus:outline-none focus:ring-2 focus:ring- focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-blue-500">
+  <Link to="/GPAGURU/p_scheme22"><button type="button" className="py-[.688rem] px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-black hover:bg-white hover:border-black focus:outline-none focus:ring-2 focus:ring- focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-blue-500">
   P-cycle
   </button></Link>
     </div>

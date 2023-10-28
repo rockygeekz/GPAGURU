@@ -14,7 +14,7 @@ const Cgpa = () => {
         </p>
       </div>
       <div className="buttons flex items-center justify-center flex-wrap space-x-5 mt-5  ">
-        <Link to="/2ndsem">
+        <Link to="/GPAGURU/2ndsem">
           {" "}
           <button
             type="button"
@@ -23,7 +23,7 @@ const Cgpa = () => {
             2nd
           </button>
         </Link>
-        <Link to="/3rdsem">
+        <Link to="/GPAGURU/3rdsem">
           <button
             type="button"
             className="py-[.688rem] px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-black hover:bg-white hover:border-black focus:outline-none focus:ring-2 focus:ring- focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-blue-500 m-3 "
@@ -31,7 +31,7 @@ const Cgpa = () => {
             3rd
           </button>
         </Link>
-        <Link to="/4thsem">
+        <Link to="/GPAGURU/4thsem">
           <button
             type="button"
             className="py-[.688rem] px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-black hover:bg-white hover:border-black focus:outline-none focus:ring-2 focus:ring- focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-blue-500 m-3 "
@@ -39,7 +39,7 @@ const Cgpa = () => {
             4th
           </button>
         </Link>
-        <Link to="/5thsem">
+        <Link to="/GPAGURU/5thsem">
           <button
             type="button"
             className="py-[.688rem] px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-black hover:bg-white hover:border-black focus:outline-none focus:ring-2 focus:ring- focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-blue-500 m- "
@@ -47,7 +47,7 @@ const Cgpa = () => {
             5th
           </button>
         </Link>
-        <Link to="/6thsem">
+        <Link to="/GPAGURU/6thsem">
           <button
             type="button"
             className="py-[.688rem] px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-black hover:bg-white hover:border-black focus:outline-none focus:ring-2 focus:ring- focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-blue-500 m-2 "
@@ -55,7 +55,7 @@ const Cgpa = () => {
             6th
           </button>
         </Link>
-        <Link to="/7thsem">
+        <Link to="/GPAGURU/7thsem">
           <button
             type="button"
             className="py-[.688rem] px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-black hover:bg-white hover:border-black focus:outline-none focus:ring-2 focus:ring- focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-blue-500 m-2 "
@@ -63,7 +63,7 @@ const Cgpa = () => {
             7th
           </button>
         </Link>
-        <Link to="/8thsem">
+        <Link to="/GPAGURU/8thsem">
           <button
             type="button"
             className="py-[.688rem] px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-black hover:bg-white hover:border-black focus:outline-none focus:ring-2 focus:ring- focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-blue-500 m-2 "
