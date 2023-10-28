@@ -32,7 +32,7 @@ const App = () => {
     //   < Header/>
     // <RouterProvider router={approuter}/>
     // </div>
-    <Router basename="">
+    <Router >
       <Header />
       <Routes>
         <Route path="/GPAGURU" element={<Home />} />
