@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./components/Header.jsx";
 import Home from "./components/Home.jsx";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   createBrowserRouter,
   RouterProvider,
   Routes,
@@ -32,7 +32,7 @@ const App = () => {
     //   < Header/>
     // <RouterProvider router={approuter}/>
     // </div>
-    <Router basename="">
+    <Router >
       <Header />
       <Routes>
         <Route path="/GPAGURU" element={<Home />} />
