@@ -55,7 +55,7 @@ const Ccycle = () => {
         <div className="text-white inputs grid gap-y-8 lg:gap-y-8 mt-20 lg:mt-12 lg:grid-cols-2 lg:grid-rows-4 text-center max-h-[50rem] lg:text-xl">
           <div className="I-1">
             <label htmlFor="" className="">
-              Introduction to electrical engineering<br></br>
+            ENGINEERING CHEMISTRY<br></br>
               <input
                 type="number"
                 name="sub1"
@@ -67,7 +67,7 @@ const Ccycle = () => {
             </label>
           </div>
           <label htmlFor="">
-            Introduction to electrical engineering
+          ENGINEERING MATHEMATICS 
             <br />
             <input
               type="number"
@@ -80,7 +80,7 @@ const Ccycle = () => {
           </label>
 
           <label htmlFor="">
-            Introduction to electrical engineering
+          COMPUTER AIDED ENGINEERING
             <br />
             <input
               type="number"
@@ -92,7 +92,7 @@ const Ccycle = () => {
             />
           </label>
           <label htmlFor="">
-            Introduction to electrical engineering
+          CIVIL/ELECTRICAL/ELECTRONICS/C PROGRAMING/MECHANICAL ENGINEERING
             <br />
             <input
               type="number"
@@ -104,7 +104,7 @@ const Ccycle = () => {
             />
           </label>
           <label htmlFor="">
-            Introduction to electrical engineering
+            ETC-1 / PLC-1
             <br />
             <input
               type="number"
@@ -116,7 +116,7 @@ const Ccycle = () => {
             />
           </label>
           <label htmlFor="">
-            Introduction to electrical engineering
+            ENGLISH
             <br />
             <input
               type="number"
@@ -128,7 +128,7 @@ const Ccycle = () => {
             />
           </label>
           <label htmlFor="">
-            Introduction to electrical engineering
+          IC / KANNADA
             <br />
             <input
               type="number"
@@ -140,7 +140,7 @@ const Ccycle = () => {
             />
           </label>
           <label htmlFor="">
-            Introduction to electrical engineering
+            SFH / IDT
             <br />
             <input
               type="number"
@@ -151,13 +151,6 @@ const Ccycle = () => {
               onChange={modchange}
             />
           </label>
-          <div className="last-btn flex justify-center items-center gap-3  ">
-            {/* {if(clicked){
-              let finalR = <Results score={inputText} />
-            }
-            
-            } */}
-          </div>
         </div>
         <div className="buttons flex items-center justify-center mt-14 ">
           {/* {" "} */}

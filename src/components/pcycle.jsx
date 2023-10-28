@@ -81,7 +81,7 @@ const Pcycle = () => {
           </label>
 
           <label htmlFor="">
-            Introduction to electrical engineering
+            C PROGRAMING
             <br />
             <input
               type="number"
@@ -93,7 +93,7 @@ const Pcycle = () => {
             />
           </label>
           <label htmlFor="">
-            Introduction to electrical engineering
+            CIVIL / ELECTRICAL / ELECTRONICS / C PROGRAMING / MECHANICAL ENGINEERING
             <br />
             <input
               type="number"
@@ -105,7 +105,7 @@ const Pcycle = () => {
             />
           </label>
           <label htmlFor="">
-            Introduction to electrical engineering
+          ETC-1 / PLC-1
             <br />
             <input
               type="number"
@@ -117,7 +117,7 @@ const Pcycle = () => {
             />
           </label>
           <label htmlFor="">
-            Introduction to electrical engineering
+          ENGLISH
             <br />
             <input
               type="number"
@@ -129,7 +129,7 @@ const Pcycle = () => {
             />
           </label>
           <label htmlFor="">
-            Introduction to electrical engineering
+          IC / KANNADA
             <br />
             <input
               type="number"
@@ -141,7 +141,7 @@ const Pcycle = () => {
             />
           </label>
           <label htmlFor="">
-            Introduction to electrical engineering
+          SFH / IDT
             <br />
             <input
               type="number"
@@ -152,13 +152,7 @@ const Pcycle = () => {
               onChange={modchange}
             />
           </label>
-          <div className="last-btn flex justify-center items-center gap-3  ">
-            {/* {if(clicked){
-              let finalR = <Results score={inputText} />
-            }
-            
-            } */}
-          </div>
+
         </div>
         <div className="buttons flex items-center justify-center mt-14 ">
           {/* {" "} */}
