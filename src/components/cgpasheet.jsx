@@ -23,7 +23,7 @@ const CgpaResult = (props) =>{
               <div className="top text-center text-4xl font-bold text-black" >CGPA<br />
               </div>
               <div className="res m-7 text-center bg-green-700 text-5xl rounded-2xl p-2 text-white ">{totalcgpa}</div>
-            <img src="/src/assets/close.png" className="w-5 absolute top-2 right-2" alt="" onClick={handleOnClose} id="close" />
+            <img src="./src/assets/close.png" className="w-5 absolute top-2 right-2 cursor-pointer" alt="" onClick={handleOnClose} id="close" />
             </div>
           </div>
           );
