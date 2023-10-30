@@ -16,10 +16,16 @@ const Pcycle = () => {
   });
 
   const modchange = (e) => {
-    const value = e.target.value;
+    var value = e.target.value;
     const name = e.target.name;
+    if (value.length > 3){
+      value = value.slice(0,3)
+    }
+    if (value > 100){
+      value=100;
+    }
     setinputText((old) => {
-      return { ...old, [name]: Number(value) };
+      return { ...old, [name]: value };
     });
     console.log(inputText);
   };
@@ -63,7 +69,9 @@ const Pcycle = () => {
                 placeholder="Marks [4-credits]"
                 min={0}
               max={100}
+              value={inputText.sub1}
                 onChange={modchange}
+                required
               />
             </label>
           </div>
@@ -204,3 +212,7 @@ const Pcycle = () => {
 };
 
 export default Pcycle;
+
+
+
+
