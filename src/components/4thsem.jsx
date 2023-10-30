@@ -62,7 +62,8 @@ const Sem4 = () =>{
                   onChange={modchange}
                   min={0}
                 max={10}
-                step={0.1}
+                step={0.001}
+                required
                 />
               </label>
 
@@ -76,7 +77,8 @@ const Sem4 = () =>{
                   onChange={modchange}
                   min={0}
                 max={10}
-                step={0.1}
+                step={0.001}
+                required
                 />
               </label>
 
@@ -91,7 +93,8 @@ const Sem4 = () =>{
                   onChange={modchange}
                   min={0}
                 max={10}
-                step={0.1}
+                step={0.001}
+                required
                 />
               </label>
 
@@ -106,7 +109,8 @@ const Sem4 = () =>{
                   onChange={modchange}
                   min={0}
                 max={10}
-                step={0.1}
+                step={0.001}
+                required
                 />
               </label>
 

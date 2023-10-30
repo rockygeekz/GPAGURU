@@ -48,13 +48,14 @@ const Sem2 = () => {
               <input
                 type="number"
                 name="sem1"
-                className="m-3 rounded-lg text-black h-10 w-56 px-8 "
+                className="m-3 rounded-lg text-black h-10 w-56 px-8 outline-none "
                 placeholder="Sgpa"
                 // value={inputText.sem1}
                 onChange={modchange}
                 min={0}
                 max={10}
-                step={0.1}
+                step={0.001}
+                required
               />
             </label>
 
@@ -69,7 +70,8 @@ const Sem2 = () => {
                 onChange={modchange}
                 min={0}
                 max={10}
-                step={0.1}
+                step={0.001}
+                required
               />
             </label>
             

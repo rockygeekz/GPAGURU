@@ -64,7 +64,8 @@ const Sem5 = () =>{
                   onChange={modchange}
                   min={0}
                 max={10}
-                step={0.1}
+                step={0.001}
+                required
                 />
               </label>
 
@@ -78,7 +79,8 @@ const Sem5 = () =>{
                   onChange={modchange}
                   min={0}
                 max={10}
-                step={0.1}
+                step={0.001}
+                required
                 />
               </label>
 
@@ -93,7 +95,8 @@ const Sem5 = () =>{
                   onChange={modchange}
                   min={0}
                 max={10}
-                step={0.1}
+                step={0.001}
+                required
                 />
               </label>
 
@@ -108,7 +111,8 @@ const Sem5 = () =>{
                   onChange={modchange}
                   min={0}
                 max={10}
-                step={0.1}
+                step={0.001}
+                required
                 />
               </label>
 
@@ -123,7 +127,8 @@ const Sem5 = () =>{
                   onChange={modchange}
                   min={0}
                 max={10}
-                step={0.1}
+                step={0.001}
+                required
                 />
               </label>
 

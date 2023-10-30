@@ -16,10 +16,16 @@ const Ccycle = () => {
   });
 
   const modchange = (e) => {
-    const value = e.target.value;
+    var value = e.target.value;
     const name = e.target.name;
+    if (value.length > 3) {
+      value = value.slice(0, 3);
+    }
+    if (value > 100) {
+      value = 100;
+    }
     setinputText((old) => {
-      return { ...old, [name]: Number(value) };
+      return { ...old, [name]: (value) };
     });
     console.log(inputText);
   };
@@ -59,11 +65,13 @@ const Ccycle = () => {
               <input
                 type="number"
                 name="sub1"
+                value={inputText.sub1}
                 className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8  "
-                placeholder="Marks [4-credits]"
                 onChange={modchange}
+                placeholder="Marks [4-credits]"
                 min={0}
                 max={100}
+                required
               />
             </label>
           </div>
@@ -76,8 +84,10 @@ const Ccycle = () => {
               className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8 "
               placeholder="Marks [4-credits]"
               onChange={modchange}
+              value={inputText.sub2}
               min={0}
               max={100}
+              required
             />
           </label>
 
@@ -90,8 +100,10 @@ const Ccycle = () => {
               className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8 "
               placeholder="Marks [3-credits]"
               onChange={modchange}
+              value={inputText.sub3}
               min={0}
               max={100}
+              required
             />
           </label>
           <label htmlFor="">
@@ -103,8 +115,10 @@ const Ccycle = () => {
               className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8 "
               placeholder="Marks [3-credits]"
               onChange={modchange}
+              value={inputText.sub4}
               min={0}
               max={100}
+              required
             />
           </label>
           <label htmlFor="">
@@ -116,8 +130,10 @@ const Ccycle = () => {
               className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8 "
               placeholder="Marks [3-credits]"
               onChange={modchange}
+              value={inputText.sub5}
               min={0}
               max={100}
+              required
             />
           </label>
           <label htmlFor="">
@@ -129,8 +145,10 @@ const Ccycle = () => {
               className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8 "
               placeholder="Marks [1-credits]"
               onChange={modchange}
+              value={inputText.sub6}
               min={0}
               max={100}
+              required
             />
           </label>
           <label htmlFor="">
@@ -142,8 +160,10 @@ const Ccycle = () => {
               className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8 "
               placeholder="Marks [1-credits]"
               onChange={modchange}
+              value={inputText.sub7}
               min={0}
               max={100}
+              required
             />
           </label>
           <label htmlFor="">
@@ -155,8 +175,10 @@ const Ccycle = () => {
               className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8 "
               placeholder="Marks [1-credits]"
               onChange={modchange}
+              value={inputText.sub8}
               min={0}
               max={100}
+              required
             />
           </label>
         </div>

@@ -18,11 +18,11 @@ const Pcycle = () => {
   const modchange = (e) => {
     var value = e.target.value;
     const name = e.target.name;
-    if (value.length > 3){
-      value = value.slice(0,3)
+    if (value.length > 3) {
+      value = value.slice(0, 3);
     }
-    if (value > 100){
-      value=100;
+    if (value > 100) {
+      value = 100;
     }
     setinputText((old) => {
       return { ...old, [name]: value };
@@ -68,8 +68,8 @@ const Pcycle = () => {
                 className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8  "
                 placeholder="Marks [4-credits]"
                 min={0}
-              max={100}
-              value={inputText.sub1}
+                max={100}
+                value={inputText.sub1}
                 onChange={modchange}
                 required
               />
@@ -81,11 +81,13 @@ const Pcycle = () => {
             <input
               type="number"
               name="sub2"
+              value={inputText.sub2}
               className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8 "
               placeholder="Marks [4-credits]"
               onChange={modchange}
               min={0}
               max={100}
+              required
             />
           </label>
 
@@ -95,11 +97,13 @@ const Pcycle = () => {
             <input
               type="number"
               name="sub3"
+              value={inputText.sub3}
               className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8 "
               placeholder="Marks [3-credits]"
               onChange={modchange}
               min={0}
               max={100}
+              required
             />
           </label>
           <label htmlFor="">
@@ -108,11 +112,13 @@ const Pcycle = () => {
             <input
               type="number"
               name="sub4"
+              value={inputText.sub4}
               className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8 "
               placeholder="Marks [3-credits]"
               onChange={modchange}
               min={0}
               max={100}
+              required
             />
           </label>
           <label htmlFor="">
@@ -121,11 +127,13 @@ const Pcycle = () => {
             <input
               type="number"
               name="sub5"
+              value={inputText.sub5}
               className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8 "
               placeholder="Marks [3-credits]"
               onChange={modchange}
               min={0}
               max={100}
+              required
             />
           </label>
           <label htmlFor="">
@@ -134,11 +142,13 @@ const Pcycle = () => {
             <input
               type="number"
               name="sub6"
+              value={inputText.sub6}
               className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8 "
               placeholder="Marks [1-credit]"
               onChange={modchange}
               min={0}
               max={100}
+              required
             />
           </label>
           <label htmlFor="">
@@ -147,11 +157,13 @@ const Pcycle = () => {
             <input
               type="number"
               name="sub7"
+              value={inputText.sub7}
               className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8 "
               placeholder="Marks [1-credit]"
               onChange={modchange}
               min={0}
               max={100}
+              required
             />
           </label>
           <label htmlFor="">
@@ -160,11 +172,13 @@ const Pcycle = () => {
             <input
               type="number"
               name="sub8"
+              value={inputText.sub8}
               className="mx-3 rounded-lg text-black btn-class mt-3 h-10 w-56 outline-none px-8 "
               placeholder="Marks [1-credit]"
               onChange={modchange}
               min={0}
               max={100}
+              required
             />
           </label>
         </div>
@@ -186,33 +200,31 @@ const Pcycle = () => {
         </div>
       </form>
       <div className="back">
-      <Link to="/GPAGURU/s_scheme22" ><button
-  type="button"
-  className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-sm dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 rotate-180  top-[3.5rem] left-4 absolute "
-> 
-  <svg
-    className="w-4 "
-    aria-hidden="true"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 14 10"
-  >
-    <path
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M1 5h12m0 0L9 1m4 4L9 9"
-    />
-  </svg>
-</button></Link>
+        <Link to="/GPAGURU/s_scheme22">
+          <button
+            type="button"
+            className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-sm dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 rotate-180  top-[3.5rem] left-4 absolute "
+          >
+            <svg
+              className="w-4 "
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </button>
+        </Link>
       </div>
     </div>
   );
 };
 
 export default Pcycle;
-
-
-
-
