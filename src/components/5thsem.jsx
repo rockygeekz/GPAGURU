@@ -16,8 +16,9 @@ const Sem5 = () =>{
     
     
       const modchange = (e) => {
-        const value = e.target.value;
+        var value = e.target.value;
         const name = e.target.name;
+        
         setinputText((old) => {
           return { ...old, [name]: Number(value) };
         });
@@ -63,6 +64,7 @@ const Sem5 = () =>{
                   onChange={modchange}
                   min={0}
                 max={10}
+                step={0.1}
                 />
               </label>
 
@@ -76,6 +78,7 @@ const Sem5 = () =>{
                   onChange={modchange}
                   min={0}
                 max={10}
+                step={0.1}
                 />
               </label>
 
@@ -90,6 +93,7 @@ const Sem5 = () =>{
                   onChange={modchange}
                   min={0}
                 max={10}
+                step={0.1}
                 />
               </label>
 
@@ -104,6 +108,7 @@ const Sem5 = () =>{
                   onChange={modchange}
                   min={0}
                 max={10}
+                step={0.1}
                 />
               </label>
 
@@ -118,6 +123,7 @@ const Sem5 = () =>{
                   onChange={modchange}
                   min={0}
                 max={10}
+                step={0.1}
                 />
               </label>
 
