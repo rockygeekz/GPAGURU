@@ -52,7 +52,7 @@ const Ccycle = () => {
   return (
     <div className="absolute top-0 left-0 min-h-fit min-w-full container mt-10">
       <form action="" className="lg:mt-32 " onSubmit={modSubmit}>
-        <div className="text-white inputs grid gap-y-8 lg:gap-y-8 mt-20 lg:mt-12 lg:grid-cols-2 lg:grid-rows-4 text-center max-h-[50rem] lg:text-xl">
+        <div className="text-white inputs font-serif grid gap-y-8 lg:gap-y-8 mt-20 lg:mt-12 lg:grid-cols-2 lg:grid-rows-4 text-center max-h-[50rem] lg:text-xl">
           <div className="I-1">
             <label htmlFor="" className="">
               ENGINEERING CHEMISTRY<br></br>
@@ -179,6 +179,28 @@ const Ccycle = () => {
           {clicked ? <Results score={inputText} click={changing} /> : null}
         </div>
       </form>
+      <div className="back">
+      <Link to="/GPAGURU/s_scheme22" ><button
+  type="button"
+  className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-sm dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 rotate-180  top-[6rem] left-4 fixed "
+> 
+  <svg
+    className="w-4 "
+    aria-hidden="true"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 14 10"
+  >
+    <path
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M1 5h12m0 0L9 1m4 4L9 9"
+    />
+  </svg>
+</button></Link>
+      </div>
     </div>
   );
 };

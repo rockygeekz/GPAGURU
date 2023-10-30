@@ -18,7 +18,7 @@ const Home = () => {
     {/* <Link to = ""><button type="button" class="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-lg dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">22-scheme</button></Link> */}
   <Link to="/GPAGURU/cschoice"><button type="button" class="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-md dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">22-scheme</button></Link>
     </div>
-    </div> 
+    </div>
   )
 }
 
