@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Results from "./Sheet.jsx";
-import MyModel from "./MyModel.jsx";
+import Results from "./SgpaSheet.jsx";
 
 const Ccycle = () => {
   const [inputText, setinputText] = useState({
@@ -25,7 +24,7 @@ const Ccycle = () => {
       value = 100;
     }
     setinputText((old) => {
-      return { ...old, [name]: (value) };
+      return { ...old, [name]: value };
     });
     console.log(inputText);
   };
@@ -198,30 +197,32 @@ const Ccycle = () => {
             RESET
           </button>
 
-          {clicked ? <Results score={inputText}  click={changing} /> : null}
+          {clicked ? <Results score={inputText} click={changing} /> : null}
         </div>
       </form>
       <div className="back">
-      <Link to="/GPAGURU/s_scheme22" ><button
-  type="button"
-  className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-sm dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 rotate-180  top-[3.5rem] left-4 absolute "
-> 
-  <svg
-    className="w-4 "
-    aria-hidden="true"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 14 10"
-  >
-    <path
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M1 5h12m0 0L9 1m4 4L9 9"
-    />
-  </svg>
-</button></Link>
+        <Link to="/GPAGURU/s_scheme22">
+          <button
+            type="button"
+            className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-sm dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 rotate-180  top-[3.5rem] left-4 absolute "
+          >
+            <svg
+              className="w-4 "
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </button>
+        </Link>
       </div>
     </div>
   );

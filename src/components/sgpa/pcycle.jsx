@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Results from "./Sheet.jsx";
-import MyModel from "./MyModel.jsx";
+import Results from "./SgpaSheet.jsx";
 
 const Pcycle = () => {
   const [inputText, setinputText] = useState({
