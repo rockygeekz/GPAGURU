@@ -51,10 +51,11 @@ const Sem3 = () =>{
                 <input
                   type="number"
                   name="sem1"
-                  value={inputText.sem1}
                   className="m-3 rounded-lg text-black h-10 w-56 px-8 "
                   placeholder="Sgpa"
                   onChange={modchange}
+                  min={0}
+                max={10}
                 />
               </label>
 
@@ -63,10 +64,11 @@ const Sem3 = () =>{
                 <input
                   type="number"
                   name="sem2"
-                  value={inputText.sem2}
                   className="m-3 rounded-lg text-black h-10 w-56 px-8"
                   placeholder="Sgpa"
                   onChange={modchange}
+                  min={0}
+                max={10}
                 />
               </label>
 
@@ -80,6 +82,8 @@ const Sem3 = () =>{
                   className="m-3 rounded-lg text-black h-10 w-56 px-8"
                   placeholder="Sgpa"
                   onChange={modchange}
+                  min={0}
+                max={10}
                 />
               </label>
 

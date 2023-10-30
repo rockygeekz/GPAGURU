@@ -16,13 +16,10 @@ const CgpaSgpa = () => {
     </div>
     <div className="buttons flex items-center justify-center flex-wrap space-x-5 mt-5">
 
-    <Link to = "/GPAGURU/cg_scheme22"> <button type="button" className="py-[.688rem] px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-black hover:bg-white hover:border-black focus:outline-none focus:ring-2 focus:ring- focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-blue-500">
-  CGPA
-  </button></Link>
-  <Link to="/GPAGURU/s_scheme22"><button type="button" className="py-[.688rem] px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-white hover:text-black hover:bg-white hover:border-black focus:outline-none focus:ring-2 focus:ring- focus:ring-offset-2 transition-all text-sm dark:border-gray-700 dark:hover:border-blue-500">
-  SGPA
-  </button></Link>
+    <Link to = "/GPAGURU/cg_scheme22"><button type="button" className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-md dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">CGPA</button></Link>
+  <Link to="/GPAGURU/s_scheme22"><button type="button" className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-md dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">SGPA</button></Link>
     </div>
+    
     </div> 
   )
 }
