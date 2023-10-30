@@ -6,10 +6,10 @@ const Cgpa = () => {
   return (
     <div className="absolute top-0 left-0 min-h-fit min-w-full  ">
       <div className="main-text pt-40">
-        <p className="text-lg text-white font-semibold text-center flex items-center justify-center">
+        <p className="text-xl text-white font-semibold font-serif text-center flex items-center justify-center">
           Which sem you are currently in ?
         </p>
-        <p className="text-lg text-white font-semibold  flex items-center justify-center mt-10">
+        <p className="text-xl font-serif text-white font-bold   flex items-center justify-center mt-10">
           Select your sem
         </p>
       </div>

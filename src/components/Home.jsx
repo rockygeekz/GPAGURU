@@ -5,11 +5,11 @@ const Home = () => {
   return (
     <div className='absolute top-0 left-0 min-h-fit min-w-full ' >
       <div className="main-text pt-40">
-    <div className="main text-white font-serif font-extrabold text-xl flex items-center justify-center ">
+    <div className="main text-white  font-serif font-extrabold text-xl flex items-center justify-center ">
       Welcome to GPA GURU</div>
     
-    <p className='text-lg text-white font-semibold font-serif  flex items-center justify-center'>Calculate your SGPA and CPGA NOW!!</p>
-    <p className='text-lg text-white font-semibold font-serif flex items-center justify-center mt-10' >
+    <p className='text-lg text-white mt-3 font-extrabold font-serif  flex items-center justify-center'>Calculate your SGPA and CPGA NOW!!</p>
+    <p className='text-lg text-white font-semibold  font-serif flex items-center justify-center mt-10' >
       Select your scheme 
     </p>
     </div>

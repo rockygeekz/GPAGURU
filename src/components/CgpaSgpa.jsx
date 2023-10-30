@@ -9,8 +9,8 @@ const CgpaSgpa = () => {
     {/* <div className="main text-white font-extrabold text-xl font-mono flex items-center justify-center ">
       Welcome to GPA GURU</div> */}
     
-    <p className='text-lg text-white font-semibold font-mono  text-center flex items-center justify-center'>Calculate your SGPA and CPGA according to latest 22 scheme!</p>
-    <p className='text-lg text-white font-semibold font-mono  flex items-center justify-center mt-10' >
+    <p className=' text-white font-semibold font-serif text-center  flex items-center justify-center  '>Calculate your SGPA and CPGA according to latest 22 scheme!</p>
+    <p className='text-lg text-white font-bold font-serif  flex items-center justify-center mt-10' >
       What do you want to Calculate?
     </p>
     </div>
