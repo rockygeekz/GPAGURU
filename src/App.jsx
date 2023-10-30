@@ -23,6 +23,7 @@ import Sem8 from "./components/8thsem.jsx";
 import Pcycle from "./components/pcycle.jsx";
 import Ccycle from "./components/ccycle.jsx";
 import PcChoice from "./components/PcChoice.jsx";
+import Visits from "./components/visitors.jsx";
 
 // import {  } from "react-router-dom";
 
@@ -49,6 +50,7 @@ const App = () => {
         <Route path="/GPAGURU/7thsem" element={<Sem7 />} />
         <Route path="/GPAGURU/8thsem" element={<Sem8 />} />
       </Routes>
+      <Visits/>
     </Router>
   );
 };
