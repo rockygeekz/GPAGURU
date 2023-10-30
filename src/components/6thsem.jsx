@@ -160,7 +160,7 @@ const Sem6 = () =>{
         <div className="back">
       <Link to="/GPAGURU/cg_scheme22" ><button
   type="button"
-  className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-sm dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 rotate-180  top-[6rem] left-4 fixed "
+  className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-sm dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 rotate-180  top-[3.5rem] left-4 absolute "
 > 
   <svg
     className="w-4 "
