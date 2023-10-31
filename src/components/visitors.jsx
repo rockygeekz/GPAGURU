@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useState } from "react";
+import useCounter from './useCounter';
 
+const Visits = () =>{
+  const [visitorsCount, setVisitorsCount] = React.useState(0);
 
-const Visits = () => {
+  const { getVisitors, setVisitors } = useCounter();
+
+  React.useEffect(() => {
+    const visitors = getVisitors();
+    setVisitorsCount(visitors);
+    setVisitors(parseInt(visitors)+1);
+  }, []);
+
   return (
-    <div className="absolute top-5 left-auto right-10">
-    <span className='text-black'>Visitors Counts</span>
-    <img src="https://hitwebcounter.com/counter/counter.php?page=9605911&style=0005&nbdigits=5&type=page&initCount=300" title="Counter Widget" Alt="Visit counter For Websites"   border="0" />
+    <div>
+      This webite was visited {visitorsCount} times.
     </div>
-  )
-  };
+  );
+}
 
 export default Visits
 
