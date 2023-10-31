@@ -1,16 +1,16 @@
 @tailwind base;
 @tailwind components;
 @layer base {
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
+}
 @tailwind utilities;
 
-.sgpa-div{
-    font-size: 30px;
-    margin-bottom: 250px;
-    position: absolute;
+.sgpa-div {
+  font-size: 30px;
+  margin-bottom: 250px;
+  position: absolute;
 }

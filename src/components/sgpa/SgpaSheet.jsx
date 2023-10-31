@@ -19,7 +19,7 @@ const Results = (props) => {
   gradepoints = [];
 
   const handleOnClose = (e) => {
-    if (e.target.id === "container" || e.target.id === "close" ) props.click();
+    if (e.target.id === "container" || e.target.id === "close") props.click();
   };
   return (
     <div
@@ -34,7 +34,14 @@ const Results = (props) => {
         </div>
         <div className="res m-7 text-center bg-green-700 text-5xl rounded-2xl p-2 text-white ">
           {totalsgpa}
-        <img src="https://cdn-icons-png.flaticon.com/512/2976/2976286.png" className="w-5 absolute top-2 right-2 cursor-" alt="" onClick={handleOnClose} id="close"/>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2976/2976286.png"
+            className="w-5 absolute top-2 right-2 cursor-pointer"
+            alt=""
+            onClick={handleOnClose}
+            id="close"
+            
+          />
         </div>
       </div>
     </div>

@@ -7,25 +7,20 @@ import {
   RouterProvider,
   Routes,
   Route,
-  BrowserRouter,
 } from "react-router-dom";
-import Scheme22 from "./components/scheme22.jsx";
-import Csgpa from "./components/CgpaSgpa.jsx";
-import Cgpa from "./components/cgpa.jsx";
-import Sgpa from "./components/Spga.jsx";
-import Sem2 from "./components/2ndsem.jsx";
-import Sem3 from "./components/3rdsem.jsx";
-import Sem4 from "./components/4thsem.jsx";
-import Sem5 from "./components/5thsem.jsx";
-import Sem6 from "./components/6thsem.jsx";
-import Sem7 from "./components/7thsem.jsx";
-import Sem8 from "./components/8thsem.jsx";
-import Pcycle from "./components/pcycle.jsx";
-import Ccycle from "./components/ccycle.jsx";
-import PcChoice from "./components/PcChoice.jsx";
+import Cschoice from "./components/Cschoice.jsx";
+import Cgpa from "./components/cgpa/cgpa.jsx";
+import Sem2 from "./components/cgpa/2ndsem.jsx";
+import Sem3 from "./components/cgpa/3rdsem.jsx";
+import Sem4 from "./components/cgpa/4thsem.jsx";
+import Sem5 from "./components/cgpa/5thsem.jsx";
+import Sem6 from "./components/cgpa/6thsem.jsx";
+import Sem7 from "./components/cgpa/7thsem.jsx";
+import Sem8 from "./components/cgpa/8thsem.jsx";
+import Pcycle from "./components/sgpa/pcycle.jsx";
+import Ccycle from "./components/sgpa/ccycle.jsx";
+import PcChoice22 from "./components/PcChoice22.jsx";
 import Visits from "./components/visitors.jsx";
-
-// import {  } from "react-router-dom";
 
 const App = () => {
   return (
@@ -33,13 +28,13 @@ const App = () => {
     //   < Header/>
     // <RouterProvider router={approuter}/>
     // </div>
-    <Router >
+    <Router>
       <Header />
       <Routes>
-        <Route path="/GPAGURU" element={<Home />} />
-        <Route path="/GPAGURU/cschoice" element={<Csgpa />} />
+        <Route path="/GPAGURU/" element={<Home />} />
+        <Route path="/GPAGURU/cschoice" element={<Cschoice />} />
         <Route path="/GPAGURU/cg_scheme22" element={<Cgpa />} />
-        <Route path="/GPAGURU/s_scheme22" element={<PcChoice />} />
+        <Route path="/GPAGURU/s_scheme22" element={<PcChoice22 />} />
         <Route path="/GPAGURU/p_scheme22" element={<Pcycle />} />
         <Route path="/GPAGURU/c_scheme22" element={<Ccycle />} />
         <Route path="/GPAGURU/2ndsem" element={<Sem2 />} />
