@@ -94,7 +94,6 @@ const Sem3 = () =>{
                 <input
                   type="number"
                   name="sem3"
-                  value={inputText.sem3}
                   className="m-3 rounded-lg text-black h-10 w-56 px-8"
                   placeholder="Sgpa"
                   onChange={modchange}
