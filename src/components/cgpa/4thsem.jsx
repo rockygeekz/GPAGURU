@@ -12,10 +12,6 @@ const Sem4 = () =>{
           sem2: 0,
           sem3: 0,
           sem4: 0,
-          sem5: 0,
-          sem6: 0,
-          sem7: 0,
-          sem8: 0,
           });
     
     
@@ -41,10 +37,6 @@ const Sem4 = () =>{
             sem2: 0,
             sem3: 0,
             sem4: 0,
-            sem5: 0,
-            sem6: 0,
-            sem7: 0,
-            sem8: 0,
           }
         )
         setclick(false)
@@ -57,10 +49,14 @@ const Sem4 = () =>{
 
 
     return (
-        <div className="absolute top-0 left-0 min-h-fit min-w-full container mt-10">
+      <><div className="container min-h-screen min-w-full 
+      bg-center bg-cover bg-fixed  bg-no-repeat  lg:h-[55rem] bg-[#0F1E26]" >
+        
+      </div>
+        <div className="absolute top-0 left-0 min-h-fit min-w-full container ">
         <form action="" onSubmit={modSubmit}>
           <div className="inputs ">
-            <div className="left flex flex-col gap-y-8 mt-40 text-white  min-w-full p-9  font-mono text-center text-xl ">
+            <div className="left flex flex-col gap-y-7 mt-40 text-white  min-w-full   font-mono text-center text-xl ">
               <label htmlFor="">
                 1st semester 
                 <input
@@ -145,7 +141,7 @@ const Sem4 = () =>{
         <div className="back">
       <Link to="/GPAGURU/cg_scheme22" ><button
   type="button"
-  className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-sm dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 rotate-180  top-[3.5rem] left-4 absolute "
+  className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-sm dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 rotate-180  top-[6rem] left-4 absolute "
 > 
   <svg
     className="w-4 "
@@ -165,6 +161,7 @@ const Sem4 = () =>{
 </button></Link>
       </div>
       </div>
+      </>
     )
 
 }

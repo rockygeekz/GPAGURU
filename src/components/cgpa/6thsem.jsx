@@ -14,8 +14,8 @@ const Sem6 = () =>{
             sem4: 0,
             sem5: 0,
             sem6: 0,
-            sem7: 0,
-            sem8: 0,
+            // sem7: 0,
+            // sem8: 0,
           });
     
     
@@ -43,8 +43,8 @@ const Sem6 = () =>{
             sem4: 0,
             sem5: 0,
             sem6: 0,
-            sem7: 0,
-            sem8: 0,
+            // sem7: 0,
+            // sem8: 0,
           }
         )
         setclick(false)
@@ -57,6 +57,11 @@ const Sem6 = () =>{
 
 
     return (
+      <>
+      <div className="container min-h-screen min-w-full 
+    bg-center bg-cover bg-fixed  bg-no-repeat h-[60rem] lg:h-[55rem] bg-[#0F1E26]" >
+      
+    </div>
         <div className="absolute top-0 left-0 min-h-fit min-w-full container mt-10">
         <form action="" onSubmit={modSubmit}>
           <div className="inputs ">
@@ -197,6 +202,7 @@ const Sem6 = () =>{
 </button></Link>
       </div>
       </div>
+      </>
     )
 
 }

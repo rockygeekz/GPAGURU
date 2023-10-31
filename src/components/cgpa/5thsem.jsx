@@ -13,9 +13,6 @@ const Sem5 = () =>{
           sem3: 0,
           sem4: 0,
           sem5: 0,
-          sem6: 0,
-          sem7: 0,
-          sem8: 0,
           });
     
     
@@ -43,9 +40,6 @@ const Sem5 = () =>{
             sem3: 0,
             sem4: 0,
             sem5: 0,
-            sem6: 0,
-            sem7: 0,
-            sem8: 0,
           }
         )
         setclick(false)
@@ -57,10 +51,14 @@ const Sem5 = () =>{
 
 
     return (
-        <div className="absolute top-0 left-0 min-h-fit min-w-full container mt-10">
+      <><div className="container min-h-screen min-w-full 
+      bg-center bg-cover bg-fixed  bg-no-repeat h-[55rem] lg:h-[55rem] bg-[#0F1E26]" >
+        
+      </div>
+        <div className="absolute top-0 text-xl  left-0 min-h-fit min-w-full container mt-10">
         <form action="" onSubmit={modSubmit}>
           <div className="inputs ">
-            <div className="left flex flex-col gap-y-8 mt-24 text-white  min-w-full p-9 text-center font-mono">
+            <div className="left flex flex-col gap-y-7 mt-24 text-white  min-w-full p\ text-center font-mono">
               <label htmlFor="">
                 1st semester 
                 <input
@@ -181,6 +179,7 @@ const Sem5 = () =>{
 </button></Link>
       </div>
       </div>
+      </>
     )
 
 }

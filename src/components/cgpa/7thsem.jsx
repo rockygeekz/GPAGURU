@@ -12,7 +12,6 @@ const Sem7 = () => {
             sem5: 0,
             sem6: 0,
             sem7: 0,
-            sem8: 0,
   });
 
   const modchange = (e) => {
@@ -39,7 +38,6 @@ const Sem7 = () => {
             sem5: 0,
             sem6: 0,
             sem7: 0,
-            sem8: 0,
     });
     setclick(false);
   };
@@ -49,10 +47,14 @@ const Sem7 = () => {
   }
 
   return (
+    <><div className="container min-h-screen min-w-full 
+    bg-center bg-cover bg-fixed  bg-no-repeat h-[66rem] lg:h-[55rem] bg-[#0F1E26]" >
+      
+    </div>
     <div className="absolute top-0 left-0 min-h-fit min-w-full container mt-10">
       <form action="" onSubmit={modSubmit}>
         <div className="inputs ">
-          <div className="text-white inputs grid gap-y-8 lg:gap-y-8 mt-20 lg:mt-12 lg:grid-cols-2 lg:grid-rows-4 text-center max-h-[50rem] lg:text-xl">
+          <div className="text-white text-xl inputs grid gap-y-8 lg:gap-y-8 mt-20 lg:mt-12 lg:grid-cols-2 lg:grid-rows-4 text-center max-h-[50rem] lg:text-xl">
             <label htmlFor="">
               1st semester
               <input
@@ -160,7 +162,7 @@ const Sem7 = () => {
 
             
           </div>
-          <div className="last-btn flex justify-center items-center gap-3  ">
+          <div className="last-btn mt-16 flex justify-center items-center gap-3  ">
               <button
                 type="submit"
                 className=" w-24  flex justify-center rounded bg-neutral-50 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-800 shadow-[0_4px_9px_-4px_#cbcbcb] transition duration-150 ease-in-out hover:bg-neutral-100 hover:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] focus:bg-neutral-100 focus:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] focus:outline-none focus:ring-0 active:bg-neutral-200 active:shadow-[0_8px_9px_-4px_rgba(203,203,203,0.3),0_4px_18px_0_rgba(203,203,203,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(251,251,251,0.3)] dark:hover:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:focus:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] dark:active:shadow-[0_8px_9px_-4px_rgba(251,251,251,0.1),0_4px_18px_0_rgba(251,251,251,0.05)] m-4"
@@ -201,6 +203,7 @@ const Sem7 = () => {
 </button></Link>
       </div>
     </div>
+    </>
   );
 };
 

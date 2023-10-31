@@ -7,12 +7,7 @@ const Sem2 = () => {
   const [inputText, setinputText] = useState({
             sem1: 0,
             sem2: 0,
-            sem3: 0,
-            sem4: 0,
-            sem5: 0,
-            sem6: 0,
-            sem7: 0,
-            sem8: 0,
+
   });
 
   const modchange = (e) => {
@@ -34,12 +29,7 @@ const Sem2 = () => {
     setinputText({
       sem1: 0,
             sem2: 0,
-            sem3: 0,
-            sem4: 0,
-            sem5: 0,
-            sem6: 0,
-            sem7: 0,
-            sem8: 0,
+
     });
     setclick(false);
   };
@@ -52,6 +42,10 @@ const Sem2 = () => {
 
 
   return (
+    <><div className="container min-h-screen min-w-full 
+    bg-center bg-cover bg-fixed  bg-no-repeat  lg:h-[55rem] bg-[#0F1E26]" >
+      
+    </div>
     <div className="absolute top-0 left-0 min-h-fit min-w-full container mt-10 ">
       <form action="" onSubmit={modSubmit}  >
         <div className="inputs font-medium  ">
@@ -114,7 +108,7 @@ const Sem2 = () => {
       <div className="back">
       <Link to="/GPAGURU/cg_scheme22" ><button
   type="button"
-  className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-sm dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 rotate-180  top-[3.5rem] left-4 absolute "
+  className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-sm dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 rotate-180  top-[3.3rem] left-5 absolute "
 > 
   <svg
     className="w-4 "
@@ -134,6 +128,7 @@ const Sem2 = () => {
 </button></Link>
       </div>
     </div>
+    </>
   );
 };
 

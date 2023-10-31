@@ -2,51 +2,40 @@ import React from 'react'
 
 const cgpasheet2 = (props) => {
 
-    var sem1Credits = 20;
-    var sem2Credits = 20;
-    var sem3Credits = 21;
-    var sem4Credits = 19;
-    var sem5Credits = 22;
-    var sem6Credits = 18;
-    var sem7Credits = 24;
-    var sem8Credits = 16;
+    var semCredits = [20,20,21,19,22,18,24,16]
+    var total = 0;
+    var i = 0;
+      for(let key in props.score){
+        total+=(props.score[`${key}`])*semCredits[i]
+        i+=1
+      }
 
-    console.log(props);
-    // console.log(props.score['sem1']);
 
-    const total = ((props.score['sem1']*20)+(props.score['sem2']*20)+(props.score['sem3']*21)+(props.score['sem4']*19)+(props.score['sem5']*22)+(props.score['sem6']*18)+(props.score['sem7']*24)+(props.score['sem8']*16))
-    console.log(total);
-
-    if(props.score['sem1'] == 0){
-        sem1Credits = 0;
+      console.log("Total is ",total);
+      var denom = 0
+    if(i==2){
+      denom=40
     }
-     if(props.score['sem2'] == 0){
-        sem2Credits = 0;
+    if(i==3){
+      denom=61
     }
-     if(props.score['sem3'] == 0){
-        sem3Credits = 0;
+    if(i==4){
+      denom=80
     }
-     if(props.score['sem4'] == 0){
-        sem4Credits = 0;
+    if(i==5){
+      denom=102
     }
-     if(props.score['sem5'] == 0){
-        sem5Credits = 0;
+    if(i==6){
+      denom=120
     }
-     if(props.score['sem6'] == 0){
-        sem6Credits = 0;
+    if(i==7){
+      denom=144
     }
-     if(props.score['sem7'] == 0){
-        sem7Credits = 0;
+    if(i==8){
+      denom=160
     }
-     if(props.score['sem8'] == 0){
-        sem8Credits = 0;
-    }
-
-    var denom = (sem1Credits+sem2Credits+sem3Credits+sem4Credits+sem5Credits+sem6Credits+sem7Credits+sem8Credits)
-    console.log(denom);
+    console.log("denominator is ",denom);
     const totalcgpa = (total/denom).toFixed(2)
-
-
 
     const handleOnClose = (e) => {
         if(e.target.id === "container"  || e.target.id === "close" )

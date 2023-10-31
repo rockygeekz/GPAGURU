@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 
 const PcChoice = () => {
   return (
-    <div className="absolute top-0 font-mono left-0 min-h-fit min-w-full  ">
+    <><div className="container min-h-screen min-w-full 
+    bg-center bg-cover bg-fixed  bg-no-repeat  lg:h-[55rem] bg-[#0F1E26]" >
+      
+    </div>
+    <div className="absolute top-0 font-mono left-0 mt-14 min-h-fit min-w-full  ">
       <div className="main-text pt-40 mt-5">
         <p className=" text-white font-semibold font-serif  text-center flex items-center justify-center">
           Calculate your SGPA according to latest 22 scheme!
@@ -34,7 +38,7 @@ const PcChoice = () => {
         <Link to="/GPAGURU/cschoice">
           <button
             type="button"
-            className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-sm dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 rotate-180 absolute top-[5.9rem] left-6 "
+            className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-sm dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 rotate-180 absolute top-[2.3rem] left-5 "
           >
             <svg
               className="w-4 "
@@ -55,6 +59,7 @@ const PcChoice = () => {
         </Link>
       </div>
     </div>
+    </>
   );
 };
 

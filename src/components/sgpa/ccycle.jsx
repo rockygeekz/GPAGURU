@@ -55,6 +55,10 @@ const Ccycle = () => {
   };
 
   return (
+    <><div className="container min-h-screen min-w-full 
+    bg-center bg-cover bg-fixed  bg-no-repeat h-[70rem] lg:h-[55rem] bg-[#0F1E26]" >
+      
+    </div>
     <div className="absolute top-0 left-0 min-h-fit min-w-full container mt-10">
       <form action="" className="lg:mt-32 " onSubmit={modSubmit}>
         <div className="text-white inputs font-serif grid gap-y-8 lg:gap-y-8 mt-20 lg:mt-12 lg:grid-cols-2 lg:grid-rows-4 text-center max-h-[50rem] lg:text-xl">
@@ -204,7 +208,7 @@ const Ccycle = () => {
         <Link to="/GPAGURU/s_scheme22">
           <button
             type="button"
-            className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-sm dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 rotate-180  top-[3.5rem] left-4 absolute "
+            className="text-black bg-gradient-to-r from-white via-white to-white hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-white shadow-lg shadow-white/50 dark:shadow-sm dark:shadow-white/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 rotate-180  top-[3.27rem] left-5 absolute "
           >
             <svg
               className="w-4 "
@@ -225,6 +229,7 @@ const Ccycle = () => {
         </Link>
       </div>
     </div>
+    </>
   );
 };
 

@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="absolute top-0 left-0 min-h-fit min-w-full ">
+    <>
+      <div className="container min-h-screen min-w-full 
+    bg-center bg-cover bg-fixed  bg-no-repeat h-[rem] lg:h-[55rem] bg-[#0F1E26]" >
+      
+    
+    <div className="absolute top-0 left-0 min-h-fit min-w-full mt-14 ">
       <div className="main-text pt-40">
         <div className="main text-white  font-serif font-extrabold text-xl flex items-center justify-center ">
           Welcome to GPA GURU
@@ -28,6 +33,8 @@ const Home = () => {
         </Link>
       </div>
     </div>
+    </div>
+    </>
   );
 };
 
