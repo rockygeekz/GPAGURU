@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CgpaResult from './cgpasheet.jsx';
+import CgpaResult2 from './cgpasheet2.jsx';
 import  {Link} from "react-router-dom"
 
 
@@ -7,12 +8,14 @@ const Sem6 = () =>{
 
     const [inputText, setinputText] = useState(
         {
-            sem1: null,
-            sem2: null,
-            sem3: null,
-            sem4: null,
-            sem5: null,
-            sem6: null,
+            sem1: 0,
+            sem2: 0,
+            sem3: 0,
+            sem4: 0,
+            sem5: 0,
+            sem6: 0,
+            sem7: 0,
+            sem8: 0,
           });
     
     
@@ -34,12 +37,14 @@ const Sem6 = () =>{
       const reset = (e) => {
         setinputText( 
           {
-            sem1: null,
-            sem2: null,
-            sem3: null,
-            sem4: null,
-            sem5: null,
-            sem6: null,
+            sem1: 0,
+            sem2: 0,
+            sem3: 0,
+            sem4: 0,
+            sem5: 0,
+            sem6: 0,
+            sem7: 0,
+            sem8: 0,
           }
         )
         setclick(false)
@@ -164,7 +169,7 @@ const Sem6 = () =>{
                 >
                   RESET
                 </button>
-                {clicked ? <CgpaResult score={inputText} click={changing} /> : null}
+                {clicked ? <CgpaResult2 score={inputText} click={changing} /> : null}
               </div>
             </div>
           </div>
