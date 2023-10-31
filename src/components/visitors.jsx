@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import useCounter from "./useCounter";
 
 const Visits = () => {
-  const [visitorsCount, setVisitorsCount] = React.useState(1239);
+  const [visitorsCount, setVisitorsCount] = React.useState(0);
 
   const { getVisitors, setVisitors } = useCounter();
 
