@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header.jsx";
 import Home from "./components/Home.jsx";
+import Visits from "./components/visitors.jsx";
 import {
   BrowserRouter as Router,
   createBrowserRouter,
@@ -44,6 +45,7 @@ const App = () => {
         <Route path="/GPAGURU/7thsem" element={<Sem7 />} />
         <Route path="/GPAGURU/8thsem" element={<Sem8 />} />
       </Routes>
+      <Visits/>
     </Router>
   );
 };
