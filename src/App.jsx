@@ -31,7 +31,7 @@ const App = () => {
     <Router>
       <Header />
       <Routes>
-        <Route path="/GPAGURU/" element={<Home />} />
+        <Route path="/GPAGURU" element={<Home />} />
         <Route path="/GPAGURU/cschoice" element={<Cschoice />} />
         <Route path="/GPAGURU/cg_scheme22" element={<Cgpa />} />
         <Route path="/GPAGURU/s_scheme22" element={<PcChoice22 />} />
@@ -45,7 +45,7 @@ const App = () => {
         <Route path="/GPAGURU/7thsem" element={<Sem7 />} />
         <Route path="/GPAGURU/8thsem" element={<Sem8 />} />
       </Routes>
-      <Visits/>
+      <Visits />
     </Router>
   );
 };
