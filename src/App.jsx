@@ -20,6 +20,7 @@ import Sem8 from "./components/cgpa/8thsem.jsx";
 import Pcycle from "./components/sgpa/pcycle.jsx";
 import Ccycle from "./components/sgpa/ccycle.jsx";
 import PcChoice22 from "./components/PcChoice22.jsx";
+import Visits from "./components/visitors.jsx";
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
         <Route path="/GPAGURU/7thsem" element={<Sem7 />} />
         <Route path="/GPAGURU/8thsem" element={<Sem8 />} />
       </Routes>
+      <Visits/>
     </Router>
   );
 };
