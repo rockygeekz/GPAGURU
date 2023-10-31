@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header.jsx";
 import Home from "./components/Home.jsx";
-import Visits from "./components/visitors.jsx";
+import Visits from "./components/Visitors.jsx";
 import {
   BrowserRouter as Router,
   createBrowserRouter,
