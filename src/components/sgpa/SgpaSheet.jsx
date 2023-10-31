@@ -4,12 +4,29 @@ const Results = (props) => {
   console.log(props);
   var gradepoints = [];
   for (const key in props.score) {
-    if (props.score[`${key}`] >= 100) {
-      gradepoints.push(10);
-    } else {
+  //   if (props.score[`${key}`] >= 100) {
+  //     gradepoints.push(10);
+  //   } else {
+  //     gradepoints.push(Math.floor(props.score[`${key}`] / 10) + 1);
+  //   }
+  // }
+    if (props.score[`${key}`] <= 40) {
+      gradepoints.push(0);
+    }
+    else if(props.score[`${key}`]>=40 && props.score[`${key}`]<45 ){
+      gradepoints.push(4);
+    } else if(props.score[`${key}`]>=45 && props.score[`${key}`]<60 ){
+      gradepoints.push(6);
+    }
+    else if (props.score[`${key}`] >= 100) {
+           gradepoints.push(10);
+         }
+     else {
       gradepoints.push(Math.floor(props.score[`${key}`] / 10) + 1);
     }
   }
+
+  console.log(gradepoints)
 
   const fourcr = (gradepoints[0] + gradepoints[1]) * 4;
   const threecr = (gradepoints[2] + gradepoints[3] + gradepoints[4]) * 3;
